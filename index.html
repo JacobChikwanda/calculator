@@ -4,9 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              },
+              fontFamily: {
+                sans: ['Poppins', 'sans-serif']
+              }
+            }
+          }
+        }
+      </script>
+    <title>Calculator</title>
 </head>
 <body>
     <!-- Caculator Skeleton -->
+    <main class="flex justify-center mt-8">
+        <div class="bg-[#f3f3f3] p-5 rounded-md">
+            <div class="bg-white h-20 rounded-md"></div>
+            <h2 class="text-center my-2 font-bold">Two-Note</h2>
+            <div class="grid grid-cols-2 gap-2 mb-4">
+                <button class="bg-[#76a5af] text-white">Del</button>
+                <button class="bg-[#e06666] text-white py-4">Reset</button>
+            </div>
+            <div class="grid grid-cols-3 gap-4">
+                <button class="bg-white px-8 py-4 rounded-md">1</button>
+                <button class="bg-white px-8 py-4 rounded-md">2</button>
+                <button class="bg-white px-8 py-4 rounded-md">3</button>
+                <button class="bg-white px-8 py-4 rounded-md">4</button>
+                <button class="bg-white px-8 py-4 rounded-md">5</button>
+                <button class="bg-white px-8 py-4 rounded-md">6</button>
+                <button class="bg-white px-8 py-4 rounded-md">7</button>
+                <button class="bg-white px-8 py-4 rounded-md">8</button>
+                <button class="bg-white px-8 py-4 rounded-md">9</button>
+                <button class="bg-white px-8 py-4 rounded-md">0</button>
+                <button class="bg-white px-8 py-4 rounded-md">+</button>
+                <button class="bg-white px-8 py-4 rounded-md">-</button>
+                <button class="bg-white px-8 py-4 rounded-md">x</button>
+                <button class="bg-white px-8 py-4 rounded-md">/</button>
+                <button class="bg-[#a4c2f4] px-8 py-4 rounded-md text-white">=</button>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
