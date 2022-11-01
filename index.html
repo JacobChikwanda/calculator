@@ -4,49 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              },
-              fontFamily: {
-                sans: ['Poppins', 'sans-serif']
-              }
-            }
-          }
-        }
-      </script>
+    <link rel="shortcut icon" href="/assets/favicon/calculator.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <script src="/javascript/app.js" type="module"></script>
     <title>Calculator</title>
 </head>
 <body>
-    <!-- Caculator Skeleton -->
-    <main class="flex justify-center mt-8">
-        <div class="bg-[#f3f3f3] p-5 rounded-md">
-            <div class="bg-white h-20 rounded-md"></div>
-            <h2 class="text-center my-2 font-bold">Two-Note</h2>
-            <div class="grid grid-cols-2 gap-2 mb-4">
-                <button class="bg-[#76a5af] text-white">Del</button>
-                <button class="bg-[#e06666] text-white py-4">Reset</button>
+    <main style="display: flex; justify-content: center; flex-shrink: 0;">
+        <div id="calculator-body" class="rounded-md">
+            <div id="calculator-screen" class="rounded"></div>
+            <h3 id="calculator-name" class="text-lg">TWO-NOTE</h3>
+            <div class="top-buttons">
+                <button value="del" id="del-btn" class="bg-blue200 btn text-white text-md btn-py rounded">Del</button>
+                <button value="reset" id="reset-btn" class="bg-red btn text-white text-md rounded">Reset</button>
             </div>
-            <div class="grid grid-cols-3 gap-4">
-                <button class="bg-white px-8 py-4 rounded-md">1</button>
-                <button class="bg-white px-8 py-4 rounded-md">2</button>
-                <button class="bg-white px-8 py-4 rounded-md">3</button>
-                <button class="bg-white px-8 py-4 rounded-md">4</button>
-                <button class="bg-white px-8 py-4 rounded-md">5</button>
-                <button class="bg-white px-8 py-4 rounded-md">6</button>
-                <button class="bg-white px-8 py-4 rounded-md">7</button>
-                <button class="bg-white px-8 py-4 rounded-md">8</button>
-                <button class="bg-white px-8 py-4 rounded-md">9</button>
-                <button class="bg-white px-8 py-4 rounded-md">0</button>
-                <button class="bg-white px-8 py-4 rounded-md">+</button>
-                <button class="bg-white px-8 py-4 rounded-md">-</button>
-                <button class="bg-white px-8 py-4 rounded-md">x</button>
-                <button class="bg-white px-8 py-4 rounded-md">/</button>
-                <button class="bg-[#a4c2f4] px-8 py-4 rounded-md text-white">=</button>
+            <div class="bottom-buttons">
+                <button value="1" class="rounded btn btn-py text-md">1</button>
+                <button value="2" class="rounded btn btn-py text-md">2</button>
+                <button value="3" class="rounded btn btn-py text-md">3</button>
+                <button value="4" class="rounded btn btn-py text-md">4</button>
+                <button value="5" class="rounded btn btn-py text-md">5</button>
+                <button value="6" class="rounded btn btn-py text-md">6</button>
+                <button value="7" class="rounded btn btn-py text-md">7</button>
+                <button value="8" class="rounded btn btn-py text-md">8</button>
+                <button value="9" class="rounded btn btn-py text-md">9</button>
+                <button value="0" class="rounded btn btn-py text-md">0</button>
+                <button value="+" class="rounded btn btn-py text-md">+</button>
+                <button value="-" class="rounded btn btn-py text-md">-</button>
+                <button value="x" class="rounded btn btn-py text-md">x</button>
+                <button value="/" class="rounded btn btn-py text-md">/</button>
+                <button value="." class="rounded btn btn-py text-md">.</button>
+                <button value="=" class="rounded btn btn-py text-md bg-blue100 text-white span-3-cols">=</button>
             </div>
         </div>
     </main>
