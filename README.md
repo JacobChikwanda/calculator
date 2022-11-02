@@ -5,7 +5,7 @@
 ![HTML & CSS](https://img.shields.io/badge/HTML-CSS-green)
 ![](https://img.shields.io/badge/FindCoder-Full%20Stack%20Js%20Bootcamp-yellow)
 
-<a href='https://rode-clone-three.vercel.app/'>Click Here to Check it Out</a>
+<a href='https://calculator-orcin-eight.vercel.app/'>Click Here to Check it Out</a>
 
 <img src='./assets/mockup.png'></img>
 
